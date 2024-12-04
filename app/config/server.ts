@@ -81,6 +81,8 @@ declare global {
 
       // custom template for preprocessing user input
       DEFAULT_INPUT_TEMPLATE?: string;
+
+      VITE_GLOB_APP_IS_BLTCY?: string;
     }
   }
 }
@@ -105,8 +107,7 @@ function getApiKey(keys?: string) {
   const apiKey = apiKeys[randomIndex];
   if (apiKey) {
     console.log(
-      `[Server Config] using ${randomIndex + 1} of ${
-        apiKeys.length
+      `[Server Config] using ${randomIndex + 1} of ${apiKeys.length
       } api key - ${apiKey}`,
     );
   }
@@ -249,5 +250,6 @@ export const getServerSideConfig = () => {
     customModels,
     defaultModel,
     allowedWebDavEndpoints,
+    isBltcy: process.env.VITE_GLOB_APP_IS_BLTCY === "true"
   };
 };

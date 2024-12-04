@@ -27,7 +27,7 @@ const pt: PartialLocaleType = {
     Return: "Voltar",
     SaasTips: "A configuração é muito complicada, quero usá-la imediatamente",
     TopTips:
-      "🥳 Oferta de Lançamento do NextChat AI, desbloqueie o OpenAI o1, GPT-4o, Claude-3.5 e os mais recentes grandes modelos agora",
+      "🥳 Oferta de Lançamento do Bltcy, desbloqueie o OpenAI o1, GPT-4o, Claude-3.5 e os mais recentes grandes modelos agora",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} mensagens`,
@@ -292,11 +292,11 @@ const pt: PartialLocaleType = {
     },
     Access: {
       SaasStart: {
-        Title: "Usar NextChat AI",
-        Label: "(A solução mais econômica)",
+        Title: "使用 柏拉图 AI",
+        Label: "（性价比最高的方案）",
         SubTitle:
-          "Mantido oficialmente pelo NextChat, pronto para uso sem configuração, suporta os mais recentes grandes modelos como OpenAI o1, GPT-4o e Claude-3.5",
-        ChatNow: "Conversar agora",
+          "由 柏拉图 官方维护, 零配置开箱即用，支持 OpenAI o1, GPT-4o, Claude-3.5 等最新大模型",
+        ChatNow: "立即充值",
       },
 
       AccessCode: {

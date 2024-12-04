@@ -19,6 +19,8 @@ import {
   trackAuthorizationPageButtonToCPaymentClick,
 } from "../utils/auth-settings-events";
 import clsx from "clsx";
+import { getServerSideConfig } from "../config/server";
+const serverConfig = getServerSideConfig();
 
 const storage = safeLocalStorage();
 
@@ -167,19 +169,22 @@ function TopBanner() {
     >
       <div className={clsx(styles["top-banner-inner"], "no-dark")}>
         <Logo className={styles["top-banner-logo"]}></Logo>
-        <span>
-          {Locale.Auth.TopTips}
-          <a
-            href={SAAS_CHAT_URL}
-            rel="stylesheet"
-            onClick={() => {
-              trackSettingsPageGuideToCPaymentClick();
-            }}
-          >
-            {Locale.Settings.Access.SaasStart.ChatNow}
-            <Arrow style={{ marginLeft: "4px" }} />
-          </a>
-        </span>
+        {
+          serverConfig.isBltcy &&
+          <span>
+            {Locale.Auth.TopTips}
+            <a
+              href={SAAS_CHAT_URL}
+              rel="stylesheet"
+              onClick={() => {
+                trackSettingsPageGuideToCPaymentClick();
+              }}
+            >
+              {Locale.Settings.Access.SaasStart.ChatNow}
+              <Arrow style={{ marginLeft: "4px" }} />
+            </a>
+          </span>
+        }
       </div>
       {(isHovered || isMobile) && (
         <Delete className={styles["top-banner-close"]} onClick={handleClose} />

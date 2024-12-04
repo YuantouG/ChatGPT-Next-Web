@@ -27,7 +27,7 @@ const ar: PartialLocaleType = {
     Return: "عودة",
     SaasTips: "الإعدادات معقدة، أريد استخدامه على الفور",
     TopTips:
-      "🥳 عرض NextChat AI الأول، افتح الآن OpenAI o1, GPT-4o, Claude-3.5 وأحدث النماذج الكبيرة",
+      "🥳 عرض Bltcy الأول، افتح الآن OpenAI o1, GPT-4o, Claude-3.5 وأحدث النماذج الكبيرة",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} محادثة`,
@@ -292,11 +292,11 @@ const ar: PartialLocaleType = {
 
     Access: {
       SaasStart: {
-        Title: "استخدام NextChat AI",
-        Label: "(أفضل حل من حيث التكلفة)",
+        Title: "使用 柏拉图 AI",
+        Label: "（性价比最高的方案）",
         SubTitle:
-          "مدعوم رسميًا من NextChat، جاهز للاستخدام بدون إعداد، يدعم أحدث النماذج الكبيرة مثل OpenAI o1 و GPT-4o و Claude-3.5",
-        ChatNow: "الدردشة الآن",
+          "由 柏拉图 官方维护, 零配置开箱即用，支持 OpenAI o1, GPT-4o, Claude-3.5 等最新大模型",
+        ChatNow: "立即充值",
       },
       AccessCode: {
         Title: "كلمة المرور للوصول",

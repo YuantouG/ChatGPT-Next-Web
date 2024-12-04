@@ -27,7 +27,7 @@ const jp: PartialLocaleType = {
     Return: "戻る",
     SaasTips: "設定が面倒すぎる、すぐに使いたい",
     TopTips:
-      "🥳 NextChat AIの発売特典で、OpenAI o1、GPT-4o、Claude-3.5などの最新の大規模モデルを今すぐアンロック",
+      "🥳 Bltcyの発売特典で、OpenAI o1、GPT-4o、Claude-3.5などの最新の大規模モデルを今すぐアンロック",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count}件の会話`,
@@ -293,11 +293,11 @@ const jp: PartialLocaleType = {
 
     Access: {
       SaasStart: {
-        Title: "NextChat AIを使用する",
-        Label: "(コストパフォーマンスの最も高いソリューション)",
+        Title: "使用 柏拉图 AI",
+        Label: "（性价比最高的方案）",
         SubTitle:
-          "NextChatによって公式に管理されており、設定なしですぐに使用でき、OpenAI o1、GPT-4o、Claude-3.5などの最新の大規模モデルをサポートしています",
-        ChatNow: "今すぐチャット",
+          "由 柏拉图 官方维护, 零配置开箱即用，支持 OpenAI o1, GPT-4o, Claude-3.5 等最新大模型",
+        ChatNow: "立即充值",
       },
 
       AccessCode: {

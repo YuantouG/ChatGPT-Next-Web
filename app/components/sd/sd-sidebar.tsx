@@ -23,6 +23,9 @@ import { useSdStore } from "@/app/store/sd";
 import { showToast } from "@/app/components/ui-lib";
 import { useMobileScreen } from "@/app/utils";
 
+import { getServerSideConfig } from "../../config/server";
+const serverConfig = getServerSideConfig();
+
 const SdPanel = dynamic(
   async () => (await import("@/app/components/sd")).SdPanel,
   {
@@ -122,7 +125,7 @@ export function SideBar(props: { className?: string }) {
       </SideBarBody>
       <SideBarTail
         primaryAction={
-          <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
+          <a href={serverConfig.isBltcy ? 'https://api.bltcy.ai/topup' : REPO_URL} target="_blank" rel="noopener noreferrer">
             <IconButton icon={<GithubIcon />} shadow />
           </a>
         }
